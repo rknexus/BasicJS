@@ -1,0 +1,55 @@
+:root {
+/*colors*/
+    --clr-bg-color: #;
+    --clr-color: #;
+    --clr-strong: #;
+    --clr-accent: #;
+}
+*,
+::before,
+::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: calc(1em + 0.5rem);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: system-ui, sans-serif;
+    position: relative;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+button {
+    display: inline-block;
+    padding: 0px;
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    color: inherit;
+}
+h1{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+#card{
+    background-image: url('./images/revy-black-lagoon-smoky-ppunknjfjb3z9bex.jpg');
+    height: 100svh;
+    width: 100svw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: 0.3s;
+}

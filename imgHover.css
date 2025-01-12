@@ -1,0 +1,77 @@
+:root {
+/*colors*/
+    --clr-bg-color: #;
+    --clr-color: #;
+    --clr-strong: #;
+    --clr-accent: #;
+}
+*,
+::before,
+::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: calc(1em + 0.5rem);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: system-ui, sans-serif;
+    /* background-color: #111;
+    color: white; */
+    font-size: 2em;
+    text-align: center;
+    /* cursor: none; */
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+button {
+    display: inline-block;
+    padding: 0px;
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    color: inherit;
+}
+.category{
+    border-bottom: 10px solid grey;
+    overflow: hidden;
+}
+.characters{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+h1{
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+h1::before{
+    content: '‎';
+}
+h2{
+    border-bottom: 2px solid silver;
+}
+h2::before{
+    content: '>';
+    color: red;
+}
+img{
+    height: 150px;
+    width: 150px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    transform: translate(0, -80%);
+    opacity: 0;
+    transition: opacity 0.5s;
+}

@@ -1,0 +1,58 @@
+:root {
+/*colors*/
+    --clr-bg-color: #;
+    --clr-color: #;
+    --clr-strong: #;
+    --clr-accent: #;
+}
+*,
+::before,
+::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: calc(1em + 0.5rem);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: system-ui, sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: none;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+button {
+    display: inline-block;
+    padding: 0px;
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    color: inherit;
+}
+#cursor1{
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    position: absolute;
+    transition: 100ms;
+}
+p{
+    color: white;
+    font-size: 9rem;
+    font-weight: bold;
+}

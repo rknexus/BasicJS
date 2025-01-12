@@ -1,0 +1,156 @@
+:root {
+/*colors*/
+    --clr-bg-color: /*#222222*/;
+    --clr-color: /*#dddddd*/;
+    --clr-strong: #;
+    --clr-accent: #;
+ 
+/*sizes*/
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-s: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+*,
+::before,
+::after {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    line-height: calc(1em + 0.5rem);
+}
+html{
+    user-select: none;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: system-ui, sans-serif;
+    display: grid;
+    place-items: center;
+    background-color: silver;
+    height: 100svh;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+button {
+    display: inline-block;
+    padding: 0px;
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    color: inherit;
+}
+#card {
+    height: 500px;
+    width: 490px;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: white;
+}
+#card {
+    background-image: url(https://plus.unsplash.com/premium_photo-1682124752476-40db22034a58?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+#card button{
+    width: 90%;
+    height: 15%;
+    border: 1px solid #C5E0F4;
+    border-radius: 1em;
+    color: green;
+    background-color: #F7EABE;
+    transition: 300ms;
+    font-weight: bold;
+    font-size: large;
+
+    &:hover{
+        background-color: #F7EABE;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+#card #friend-button{
+    background-color: gold;
+    color: green;
+    border: 1px solid black;
+}
+#card #notFriend-button{
+    background-color: tomato;
+    color: black;
+    border: 1px solid white;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/*extra-small (xs)*/
+@media (min-width:475px) {
+.container {
+    max-width:475px;
+}
+}
+ 
+/*small (sm)*/
+@media (min-width:640px) {
+.container {
+    max-width:640px;
+}
+}
+ 
+/*medium (md)*/
+@media (min-width:768px) {
+.container {
+    max-width: 768px;
+}
+}
+ 
+/*large (ld)*/
+@media (min-width:1024px) {
+.container {
+    max-width: 1024px;
+}
+}
+ 
+/*extra-large (xl)*/
+@media (min-width:1280px) {
+.container {
+    max-width: 1280px;
+}
+}
+ 
+/*extra-extra large (2xl)*/
+@media (min-width:1536px) {
+.container {
+    max-width: 1536px;
+}
+}
