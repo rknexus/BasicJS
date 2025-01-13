@@ -18,6 +18,10 @@ html{
 }
 body{
     font-family: system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right,rgba(255, 171, 171, 0.5), rgba(247, 22, 22, 0.5));
 }
 img,
 picture,
@@ -35,4 +39,49 @@ button {
     background-color: none;
     cursor: pointer;
     color: inherit;
+}
+.container{
+    height: 800px;
+    width: 600px;
+    background-image: linear-gradient(to bottom left,rgba(200, 128, 128, 0.5), rgba(218, 36, 36, 0.5));
+    border: 2px solid white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.stories{
+    height: 200px;
+    width: 100%;
+    border-bottom: 2px solid silver;
+    padding: 15px;
+    white-space: nowrap;
+    overflow: auto;
+    overflow-y: hidden;
+}
+.stories::-webkit-scrollbar{
+    width: 0px;
+}
+.story{
+    height: 140px;
+    width: 140px;
+    border: 3px solid tomato;
+    border-radius: 50%;
+    margin: 10px;
+    display: inline-block;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.fullscreen{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: none;
 }
