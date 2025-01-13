@@ -1,0 +1,38 @@
+:root {
+/*colors*/
+    --clr-bg-color: #;
+    --clr-color: #;
+    --clr-strong: #;
+    --clr-accent: #;
+}
+*,
+::before,
+::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: calc(1em + 0.5rem);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: system-ui, sans-serif;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+button {
+    display: inline-block;
+    padding: 0px;
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    color: inherit;
+}
